@@ -1,48 +1,62 @@
-# Image Editor
+# Pixel Rabbit Adventure
 
-A desktop image editing application developed with Python, Tkinter, and OpenCV.
+A pixel-art 2D side-scrolling action platformer where you control a heroic rabbit with a red scarf, fighting enemies and collecting carrots through three challenging levels.
 
 ## Features
 
-- Load local image files
-- Interactive image cropping with mouse
-- Real-time preview of cropped image
-- Image scaling functionality
-- Save modified images
-- Undo/Redo functionality
-- Keyboard shortcuts support
+- Pixel-art style 2D side-scrolling action gameplay
+- Three unique levels with increasing difficulty
+- Multiple enemy types:
+  - Grunt: patrols platforms
+  - Gunner: patrols and shoots projectiles
+  - Boss: a powerful enemy in the final level
+- Collectible system: collect carrots to replenish ammo
+- Smooth camera following system
+- Health, lives, and ammo system
+- All UI and in-game text in English
 
-## Requirements
+## Controls
 
-- Python 3.7+
-- OpenCV
-- NumPy
-- Pillow
+- Arrow keys or A/D: Move
+- Space: Jump
+- J: Shoot
+- Game over returns to main menu
 
 ## Installation
 
-1. Clone or download this repository
+1. Make sure you have Python 3.7 or higher installed
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-## Usage
+## How to Run
 
-1. Run the application:
-   ```bash
-   python image_editor.py
-   ```
+```bash
+python src/main.py
+```
 
-2. Instructions:
-   - Click "Open Image" to load an image
-   - Use mouse drag on the left canvas to select crop area
-   - Use the slider to adjust the scale of the cropped image
-   - Click "Save" or use Ctrl+S to save the modified image
-   - Use "Undo" and "Redo" buttons or Ctrl+Z/Ctrl+Y for edit history
+## Game Objectives
 
-## Keyboard Shortcuts
+- Defeat all enemies
+- Collect carrots to replenish ammo
+- Survive the boss fight
+- Complete all three levels
 
-- Ctrl+S: Save image
-- Ctrl+Z: Undo
-- Ctrl+Y: Redo 
+## Project Structure
+
+- `src/main.py`: Game entry point
+- `src/game.py`: Core game logic
+- `src/player.py`: Player class
+- `src/enemy.py`: Enemy classes
+- `src/level.py`: Level management
+- `src/camera.py`: Camera system
+- `src/projectile.py`: Projectile classes
+
+## TODO
+
+- [ ] Add sound effects and background music
+- [ ] Add more animations
+- [ ] Implement save system
+- [ ] Add more levels
+- [ ] Optimize game performance 
